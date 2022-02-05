@@ -1,8 +1,14 @@
-import React from "react";
-import "./App.css";
+import { FC } from "react";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
-  return <div>App</div>;
+import HomeScreen from "./pages/HomeScreen";
+
+const App: FC = () => {
+  return (
+    <Routes>
+      <Route index element={<HomeScreen />} />
+    </Routes>
+  );
 };
 
 export default App;
