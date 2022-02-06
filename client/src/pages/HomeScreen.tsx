@@ -8,7 +8,7 @@ const HomeScreen: FC = () => {
 
   return (
     <>
-      <CategoryList setCategory={setCategory} />
+      <CategoryList category={category} setCategory={setCategory} />
       <ProductionList category={category} />
     </>
   );
