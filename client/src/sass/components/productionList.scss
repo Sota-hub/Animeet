@@ -1,0 +1,18 @@
+@use "../base/variables";
+@use "../base/global";
+
+.product__container--list {
+  @media (min-width: variables.$laptop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    margin: 0 auto;
+    justify-items: center;
+  }
+  @media (min-width: 1075px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: 1375px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

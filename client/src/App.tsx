@@ -1,8 +1,20 @@
-import React from "react";
-import "./App.css";
+import { FC } from "react";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
-  return <div>App</div>;
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomeScreen from "./pages/HomeScreen";
+
+const App: FC = () => {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route index element={<HomeScreen />} />
+      </Routes>
+      <Footer />
+    </>
+  );
 };
 
 export default App;
