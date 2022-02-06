@@ -1,0 +1,10 @@
+@mixin alignFourDirections($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin styleProtectionWidth {
+  max-width: 300px;
+  overflow: hidden;
+}
