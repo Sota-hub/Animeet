@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-import ProductionListItem from "./ProductionListItem";
-import "../css/components/productionList.css";
+import ProjectListItem from "./ProjectListItem";
+import "../css/components/projectList.css";
 
-interface ProductionListProps {
+interface ProjectListProps {
   category: string;
 }
 
@@ -52,13 +52,13 @@ const DummyData = [
 ];
 // ===========================================
 
-const ProductionList: FC<ProductionListProps> = ({ category }) => {
+const ProjectList: FC<ProjectListProps> = ({ category }) => {
   // fetching items by category
 
   return (
-    <div className="product__container--list">
+    <div className="project__container--list">
       {DummyData.map((dummy) => (
-        <ProductionListItem
+        <ProjectListItem
           key={dummy.id}
           imagePath={dummy.imagePath}
           projectName={dummy.projectName}
@@ -72,4 +72,4 @@ const ProductionList: FC<ProductionListProps> = ({ category }) => {
   );
 };
 
-export default ProductionList;
+export default ProjectList;
