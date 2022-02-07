@@ -1,7 +1,7 @@
 @use "../base/variables";
 @use "../base/global";
 
-.product__container--list {
+.home__container--outside {
   @media (min-width: variables.$laptop) {
     display: grid;
     grid-template-columns: 1fr 1fr;

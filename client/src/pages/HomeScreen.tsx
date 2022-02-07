@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 
 import CategoryList from "../components/CategoryList";
-import ProductionList from "../components/ProductionList";
+import HomeList from "../components/HomeList";
 
 const HomeScreen: FC = () => {
   const [category, setCategory] = useState<string>("Adventure");
@@ -9,7 +9,7 @@ const HomeScreen: FC = () => {
   return (
     <>
       <CategoryList category={category} setCategory={setCategory} />
-      <ProductionList category={category} />
+      <HomeList category={category} />
     </>
   );
 };
