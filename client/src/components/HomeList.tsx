@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-import ProjectListItem from "./ProjectListItem";
-import "../css/components/projectList.css";
+import HomeListItem from "./HomeListItem";
+import "../css/components/homeList.css";
 
-interface ProjectListProps {
+interface HomeListProps {
   category: string;
 }
 
@@ -52,13 +52,13 @@ const DummyData = [
 ];
 // ===========================================
 
-const ProjectList: FC<ProjectListProps> = ({ category }) => {
+const HomeList: FC<HomeListProps> = ({ category }) => {
   // fetching items by category
 
   return (
-    <div className="project__container--list">
+    <div className="home__container--outside">
       {DummyData.map((dummy) => (
-        <ProjectListItem
+        <HomeListItem
           key={dummy.id}
           imagePath={dummy.imagePath}
           projectName={dummy.projectName}
@@ -72,4 +72,4 @@ const ProjectList: FC<ProjectListProps> = ({ category }) => {
   );
 };
 
-export default ProjectList;
+export default HomeList;

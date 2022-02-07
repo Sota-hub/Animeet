@@ -139,7 +139,7 @@ body {
 }
 
 @media (min-width: 769px) {
-  .product__container--list {
+  .home__container--outside {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80vw;
@@ -148,12 +148,12 @@ body {
   }
 }
 @media (min-width: 1075px) {
-  .product__container--list {
+  .home__container--outside {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1375px) {
-  .product__container--list {
+  .home__container--outside {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
