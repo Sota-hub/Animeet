@@ -3,18 +3,18 @@
 @use "../base/global";
 @use "../base/animations";
 
-.category__list {
+.home__category--list {
   @include mixin.ScrollableHorizontally;
   display: flex;
   border-bottom: variables.$border;
 }
 
 // Remove scrollbar(Chrome, Safari)
-.category__list::-webkit-scrollbar {
+.home__category--list::-webkit-scrollbar {
   display: none;
 }
 
-.category__item {
+.home__category--item {
   font-size: 14px;
   padding: 1em;
   cursor: pointer;
@@ -24,7 +24,7 @@
   }
 }
 
-.category__item--active {
+.home__category--activeItem {
   font-size: 14px;
   padding: 1em;
   cursor: pointer;

@@ -1,6 +1,6 @@
 import { FC, Dispatch, SetStateAction, MouseEvent } from "react";
 
-import "../css/components/categoryList.css";
+import "../css/components/homeCategory.css";
 
 const categories = [
   "Adventure",
@@ -18,23 +18,23 @@ const categories = [
   "Romance",
 ];
 
-interface CategoryListProps {
+interface HomeCategoryProps {
   category: string;
   setCategory: Dispatch<SetStateAction<string>>;
 }
 
-const CategoryList: FC<CategoryListProps> = ({ category, setCategory }) => {
+const HomeCategory: FC<HomeCategoryProps> = ({ category, setCategory }) => {
   const selectCategory = (e: MouseEvent) => {
     setCategory((e.target as HTMLLIElement).innerText);
   };
 
   const activateStyle = (cat: string) => {
-    if (category === cat) return "category__item--active";
-    return "category__item";
+    if (category === cat) return "home__category--activeItem";
+    return "home__category--item";
   };
 
   return (
-    <ul className="category__list">
+    <ul className="home__category--list">
       {categories.map((cat) => (
         <li key={cat} onClick={selectCategory} className={activateStyle(cat)}>
           {cat}
@@ -44,4 +44,4 @@ const CategoryList: FC<CategoryListProps> = ({ category, setCategory }) => {
   );
 };
 
-export default CategoryList;
+export default HomeCategory;
