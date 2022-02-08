@@ -1,0 +1,75 @@
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/global";
+
+.main__wrap--image {
+  width: 100vw;
+  height: 250px;
+  overflow: hidden;
+}
+
+.main__image {
+  width: 100vw;
+}
+
+.main__wrap--info {
+  margin-left: 1.5rem;
+  width: 85vw;
+}
+
+.main__title {
+  margin-top: 2rem;
+  font-size: 32px;
+}
+
+.main__description {
+  margin-top: 1em;
+}
+
+.main__button--support {
+  margin-top: 1.5em;
+  display: block;
+  padding: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  background-color: variables.$orange;
+  color: variables.$white;
+}
+
+.main__wrap--support {
+  @include mixin.alignFourDirections($justify: flex-start, $align: flex-end);
+  margin-top: 1.5rem;
+}
+
+.main__support--current {
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.main__support--target {
+  font-size: 12px;
+}
+
+.main__expiration {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.main__expiration--span {
+  font-size: 12px;
+}
+
+.main__members {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.main__wrap--creator {
+  @include mixin.ScrollableHorizontally;
+  display: flex;
+}
+
+.main__wrap--creator::-webkit-scrollbar {
+  display: none;
+}

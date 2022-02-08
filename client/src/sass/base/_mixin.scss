@@ -8,3 +8,12 @@
   max-width: 300px;
   overflow: hidden;
 }
+
+@mixin ScrollableHorizontally {
+  margin: 0 auto 0 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  // Remove scrollbar(IE, Edge, Firefox)
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,16 +1,12 @@
 @use "../base/variables";
+@use "../base/mixin";
 @use "../base/global";
 @use "../base/animations";
 
 .category__list {
+  @include mixin.ScrollableHorizontally;
   display: flex;
-  margin: 0 auto 0 0;
-  overflow-x: auto;
-  overflow-y: hidden;
   border-bottom: variables.$border;
-  // Remove scrollbar(IE, Edge, Firefox)
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 // Remove scrollbar(Chrome, Safari)

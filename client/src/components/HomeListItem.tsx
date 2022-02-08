@@ -1,5 +1,6 @@
 import { FC } from "react";
 
+import { checkReminded } from "../helperFunctions";
 import "../css/components/homeListItem.css";
 
 interface HomeListItemProps {
@@ -19,11 +20,6 @@ const HomeListItem: FC<HomeListItemProps> = ({
   expireDate,
   remindedUserIds,
 }) => {
-  const checkReminded = (remindedUserIds: number[]) => {
-    if (remindedUserIds.includes(111111)) return "home__icon--active";
-    return "home__icon";
-  };
-
   return (
     <div className="home__container--inside">
       <div className="home__wrap--image">
@@ -42,7 +38,13 @@ const HomeListItem: FC<HomeListItemProps> = ({
           <p className="home__expiration">{`Expired at ${expireDate}`}</p>
         </div>
       </div>
-      <div className={checkReminded(remindedUserIds)}>
+      <div
+        className={checkReminded(
+          remindedUserIds,
+          "home__icon--active",
+          "home__icon"
+        )}
+      >
         <img src="/heart.svg" alt="heart icon" width={15} />
       </div>
     </div>

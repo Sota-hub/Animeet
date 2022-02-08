@@ -3,7 +3,7 @@
 @use "../base/global";
 
 .header__container {
-  @include mixin.alignFourDirections($justify: space-between, $align: center);
+  @include mixin.alignFourDirections($justify: space-between);
   height: 75px;
   padding: 0 1.5rem;
   border-bottom: variables.$border;
@@ -29,7 +29,7 @@
 }
 
 .header__wrap--right {
-  @include mixin.alignFourDirections($justify: center, $align: center);
+  @include mixin.alignFourDirections();
 }
 
 .header__link--explore {
