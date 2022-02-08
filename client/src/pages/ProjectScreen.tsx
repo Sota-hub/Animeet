@@ -24,10 +24,10 @@ const Dummy = {
   //PLAN
   story:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet eveniet vel, voluptate quae praesentium accusantium aperiam quas a veniam nesciunt dignissimos porro, voluptates perferendis optio velit sequi, quidem explicabo.",
-  character_design_path: "/bird.jpg",
-  original_picture_path: "/bird.jpg",
-  voice_path: "/se.mp3",
-  sound_effect_path: "/se.mp3",
+  character_design_paths: ["/bird.jpg"],
+  original_picture_paths: ["/paripi.jpg"],
+  voice_path: "/neo-rock.mp3",
+  sound_effect_path: "/neo-rock.mp3",
   //COMMENT
   user_id: 111111,
   comment_text:
@@ -52,7 +52,13 @@ const ProjectScreen: FC = () => {
         expireDate={Dummy.expire_date}
         creators={Dummy.creators}
       />
-      <ProjectPlan />
+      <ProjectPlan
+        story={Dummy.story}
+        characterDesignPaths={Dummy.character_design_paths}
+        originalPicturePaths={Dummy.original_picture_paths}
+        voicePath={Dummy.voice_path}
+        sound_effect_path={Dummy.sound_effect_path}
+      />
       {/* <ProjectComment />
       <ProjectAnnounce /> */}
     </>

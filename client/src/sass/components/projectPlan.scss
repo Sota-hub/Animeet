@@ -1,0 +1,47 @@
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/global";
+
+.plan__wrap {
+  margin-left: 1.5em;
+  width: 85vw;
+}
+
+.plan__heading {
+  margin-top: 2rem;
+  font-size: 26px;
+}
+
+.plan__story {
+  margin-top: 1rem;
+}
+
+.plan__image {
+  display: block;
+  margin-top: 1rem;
+  width: 330px;
+  height: 210px;
+}
+
+.plan__wrap--playIcon {
+  @include mixin.alignFourDirections();
+  margin-top: 1rem;
+  width: 80px;
+  height: 50px;
+  border: variables.$border;
+  border-radius: 12px;
+}
+
+// .plan__wrap--pauseIcon {
+//   @include mixin.alignFourDirections();
+//   margin-top: 1rem;
+//   width: 80px;
+//   height: 50px;
+//   border-radius: 12px;
+//   background-color: variables.$orange;
+// }
+
+.plan__icon--audio {
+  width: 26px;
+  height: 26px;
+}
