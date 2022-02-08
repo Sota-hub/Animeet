@@ -19,7 +19,9 @@ const ProjectPlan: FC<ProjectPlanProps> = ({
 }) => {
   let isPlaying = false;
   const voice = new Audio(voicePath);
+  voice.volume = 0.1;
   const SE = new Audio(sound_effect_path);
+  SE.volume = 0.1;
 
   const switchAudio = (audio: HTMLAudioElement) => {
     if (isPlaying) {
