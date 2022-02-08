@@ -1,6 +1,7 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 import ProjectMain from "../components/ProjectMain";
+import ProjectNavigation from "../components/ProjectNavigation";
 import ProjectPlan from "../components/ProjectPlan";
 import ProjectComment from "../components/ProjectComment";
 import ProjectAnnounce from "../components/ProjectAnnounce";
@@ -40,6 +41,8 @@ const Dummy = {
 };
 
 const ProjectScreen: FC = () => {
+  const [navigation, setNavigation] = useState("Plan");
+
   return (
     <>
       <ProjectMain
@@ -52,15 +55,21 @@ const ProjectScreen: FC = () => {
         expireDate={Dummy.expire_date}
         creators={Dummy.creators}
       />
-      <ProjectPlan
-        story={Dummy.story}
-        characterDesignPaths={Dummy.character_design_paths}
-        originalPicturePaths={Dummy.original_picture_paths}
-        voicePath={Dummy.voice_path}
-        sound_effect_path={Dummy.sound_effect_path}
+      <ProjectNavigation
+        navigation={navigation}
+        setNavigation={setNavigation}
       />
-      {/* <ProjectComment />
-      <ProjectAnnounce /> */}
+      {navigation === "Plan" && (
+        <ProjectPlan
+          story={Dummy.story}
+          characterDesignPaths={Dummy.character_design_paths}
+          originalPicturePaths={Dummy.original_picture_paths}
+          voicePath={Dummy.voice_path}
+          sound_effect_path={Dummy.sound_effect_path}
+        />
+      )}
+      {navigation === "Comment" && <ProjectComment />}
+      {navigation === "Announce" && <ProjectAnnounce />}
     </>
   );
 };

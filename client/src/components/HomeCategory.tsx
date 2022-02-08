@@ -1,22 +1,8 @@
 import { FC, Dispatch, SetStateAction, MouseEvent } from "react";
 
+import { activateStyle } from "../helperFunctions";
+import { categories } from "../stringArrays";
 import "../css/components/homeCategory.css";
-
-const categories = [
-  "Adventure",
-  "Action",
-  "Comedy",
-  "SliceOfLife",
-  "Drama",
-  "Fantasy",
-  "Supernatural",
-  "Magic",
-  "Mystery",
-  "Horror",
-  "Psychological",
-  "SciFi",
-  "Romance",
-];
 
 interface HomeCategoryProps {
   category: string;
@@ -28,15 +14,19 @@ const HomeCategory: FC<HomeCategoryProps> = ({ category, setCategory }) => {
     setCategory((e.target as HTMLLIElement).innerText);
   };
 
-  const activateStyle = (cat: string) => {
-    if (category === cat) return "home__category--activeItem";
-    return "home__category--item";
-  };
-
   return (
     <ul className="home__category--list">
       {categories.map((cat) => (
-        <li key={cat} onClick={selectCategory} className={activateStyle(cat)}>
+        <li
+          key={cat}
+          onClick={selectCategory}
+          className={activateStyle(
+            category,
+            cat,
+            "home__category--activeItem",
+            "home__category--item"
+          )}
+        >
           {cat}
         </li>
       ))}

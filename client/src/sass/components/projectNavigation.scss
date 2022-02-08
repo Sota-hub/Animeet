@@ -1,0 +1,28 @@
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/global";
+@use "../base/animations";
+
+.navigation__list {
+  @include mixin.alignFourDirections($justify: space-between);
+  margin: 2rem 0;
+  border-top: variables.$border;
+  border-bottom: variables.$border;
+  text-align: center;
+}
+
+.navigation__item {
+  width: 120px;
+  padding: 20px 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation__item--active {
+  width: 120px;
+  padding: 20px 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: variables.$orange;
+  animation: jelly 0.5s;
+}
