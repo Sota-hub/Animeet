@@ -159,18 +159,7 @@ body {
   .navigation__list {
     margin-left: 7.5%;
     width: 50%;
-    transform: translateY(-325px);
     border: none;
-  }
-}
-@media (min-width: 1024px) {
-  .navigation__list {
-    transform: translateY(-150px);
-  }
-}
-@media (min-width: 1441px) {
-  .navigation__list {
-    transform: translateY(0px);
   }
 }
 

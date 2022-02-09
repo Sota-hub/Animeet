@@ -17,9 +17,3 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-@mixin mediaQueryStyleForProject {
-  margin-left: 7.5%;
-  width: 50%;
-  transform: translateY(-325px);
-}

@@ -146,16 +146,5 @@ body {
   .announce__wrap {
     margin-left: 7.5%;
     width: 50%;
-    transform: translateY(-325px);
-  }
-}
-@media (min-width: 1024px) {
-  .announce__wrap {
-    transform: translateY(-150px);
-  }
-}
-@media (min-width: 1441px) {
-  .announce__wrap {
-    transform: translateY(0px);
   }
 }
