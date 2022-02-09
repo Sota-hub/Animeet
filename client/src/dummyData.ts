@@ -65,10 +65,29 @@ export const ProjectDummy = {
   voice_path: "/neo-rock.mp3",
   sound_effect_path: "/neo-rock.mp3",
   //COMMENT
-  user_id: 111111,
-  comment_text:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste cumque architecto omnis reprehenderit quaerat cupiditate, tempora labore blanditiis libero laudantium ipsa illum dolorem placeat earum deleniti maxime voluptatem expedita!",
-  time_stamp: Date.now(),
+  comments: [
+    {
+      id: 1,
+      user_name: "Tomas",
+      comment_text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste cumque architecto omnis reprehenderit quaerat cupiditate, tempora labore blanditiis libero laudantium ipsa illum dolorem placeat earum deleniti maxime voluptatem expedita!",
+      time_stamp: new Date(),
+    },
+    {
+      id: 2,
+      user_name: "Tomas",
+      comment_text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste cumque architecto omnis reprehenderit quaerat cupiditate, tempora labore blanditiis libero laudantium ipsa illum dolorem placeat earum deleniti maxime voluptatem expedita!",
+      time_stamp: new Date(),
+    },
+    {
+      id: 3,
+      user_name: "Tomas",
+      comment_text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, iste cumque architecto omnis reprehenderit quaerat cupiditate, tempora labore blanditiis libero laudantium ipsa illum dolorem placeat earum deleniti maxime voluptatem expedita!",
+      time_stamp: new Date(),
+    },
+  ],
   //ANNOUNCE
   announce_text:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",

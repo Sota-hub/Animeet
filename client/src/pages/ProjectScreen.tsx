@@ -36,7 +36,9 @@ const ProjectScreen: FC = () => {
           sound_effect_path={ProjectDummy.sound_effect_path}
         />
       )}
-      {navigation === "Comment" && <ProjectComment />}
+      {navigation === "Comment" && (
+        <ProjectComment comments={ProjectDummy.comments} />
+      )}
       {navigation === "Announce" && <ProjectAnnounce />}
     </>
   );

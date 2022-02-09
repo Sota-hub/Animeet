@@ -1,0 +1,30 @@
+@use "../../base/variables";
+@use "../../base/mixin";
+@use "../../base/global";
+
+.userComment__wrap {
+  @include mixin.alignFourDirections($justify: flex-start);
+  display: flex;
+  margin-top: 1rem;
+}
+
+.userComment__image {
+  width: 32px;
+  height: 32px;
+}
+
+.userComment__username {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+.userComment__text {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: variables.$border;
+}
+
+.userComment__timestamp {
+  margin-top: 0.5rem;
+  text-align: right;
+}
