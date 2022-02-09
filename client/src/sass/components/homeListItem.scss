@@ -50,6 +50,9 @@
 }
 
 .home__title {
+  display: block;
+  color: variables.$white;
+  text-decoration: none;
   font-weight: 600;
   @include mixin.styleProtectionWidth;
   @media (min-width: variables.$tablet) {

@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 import { checkReminded } from "../helperFunctions";
 import "../css/components/homeListItem.css";
@@ -27,7 +28,9 @@ const HomeListItem: FC<HomeListItemProps> = ({
       </div>
       <div className="home__wrap--info">
         <div className="home__inner">
-          <h1 className="home__title">{projectName}</h1>
+          <Link to="/project" className="home__title">
+            {projectName}
+          </Link>
           <p className="home__description">{projectDescription}</p>
           <div className="home__creator">
             <span>{creatorsName[0]}</span>
