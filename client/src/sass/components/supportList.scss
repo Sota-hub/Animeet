@@ -1,0 +1,38 @@
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/global";
+
+.support__wrap--title {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: variables.$border;
+}
+
+.support__title {
+  font-size: 22px;
+  @media (min-width: variables.$tablet) {
+    font-size: 32px;
+  }
+}
+
+.support__wrap--rewards {
+  margin: 2rem auto;
+  width: 85vw;
+  @media (min-width: variables.$tablet) {
+    @include mixin.alignFourDirections($align: flex-start);
+    width: 100vw;
+  }
+}
+
+.support__intro {
+  font-size: 20px;
+  @media (min-width: variables.$tablet) {
+    display: none;
+  }
+}
+
+.support--wrap--rewardCard {
+  @media (min-width: variables.$tablet) {
+    width: 300px;
+  }
+}

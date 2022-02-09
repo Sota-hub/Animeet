@@ -10,12 +10,12 @@ export const checkReminded = (
 };
 
 export const activateStyle = (
-  state: string,
-  elementText: string,
+  state: string | (number | null),
+  subject: string | number,
   activeStyle: string,
   usualStyle: string
 ) => {
-  if (state === elementText) return activeStyle;
+  if (state === subject) return activeStyle;
   return usualStyle;
 };
 

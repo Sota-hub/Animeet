@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 import RemindButton from "./ui/RemindButton";
 import CreatorCard from "./ui/CreatorCard";
@@ -33,9 +34,9 @@ const ProjectMain: FC<ProjectMainProps> = ({
       <div className="main__wrap--info">
         <h1 className="main__title">{projectName}</h1>
         <p className="main__description">{projectDescription}</p>
-        <a href="/" className="main__button--support">
+        <Link to="/support" className="main__button--support">
           <p>Support this project</p>
-        </a>
+        </Link>
         <div className="main__wrap--support">
           <p className="main__support--current">Supported ${supportCurrent}</p>
           <p className="main__support--target">Supported ${supportTarget}</p>

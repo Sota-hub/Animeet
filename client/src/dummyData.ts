@@ -110,3 +110,30 @@ export const ProjectDummy = {
     },
   ],
 };
+
+export const SupportDummy = {
+  project_name: "One Piece",
+  supports: [
+    {
+      id: 1,
+      support_amount: 100,
+      reward_title: "reward1",
+      reward_description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
+    },
+    {
+      id: 2,
+      support_amount: 200,
+      reward_title: "reward2",
+      reward_description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
+    },
+    {
+      id: 3,
+      support_amount: 300,
+      reward_title: "reward3",
+      reward_description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
+    },
+  ],
+};
