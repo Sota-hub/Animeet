@@ -1,0 +1,44 @@
+@use "../../base/variables";
+@use "../../base/global";
+
+.reward__wrap--laptop--active {
+  display: none;
+  @media (min-width: variables.$tablet) {
+    display: block;
+    margin-left: 5%;
+    width: 45%;
+  }
+}
+
+.reward__wrap--laptop {
+  display: none;
+}
+
+.reward__intro--laptop {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.reward__title--laptop {
+  margin-top: 1rem;
+  font-size: 28px;
+}
+
+.reward__description--laptop {
+  margin-top: 1rem;
+}
+
+.reward__link--laptop {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 350px;
+  background-color: variables.$orange;
+  color: variables.$white;
+  border: none;
+  border-radius: 4px;
+  font-family: variables.$font;
+  font-size: 15px;
+}
