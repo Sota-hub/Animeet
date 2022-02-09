@@ -148,6 +148,11 @@ body {
   border: 1px solid #ffffff;
   flex-shrink: 0;
 }
+@media (min-width: 769px) {
+  .creator__wrap {
+    margin-top: 6px;
+  }
+}
 
 .creator__image {
   width: 36px;

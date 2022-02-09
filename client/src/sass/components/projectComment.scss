@@ -5,6 +5,15 @@
 .comment__wrap {
   margin: 0 auto;
   width: 85vw;
+  @media (min-width: variables.$tablet) {
+    @include mixin.mediaQueryStyleForProject;
+  }
+  @media (min-width: variables.$laptop) {
+    transform: translateY(-150px);
+  }
+  @media (min-width: variables.$desktop) {
+    transform: translateY(0px);
+  }
 }
 
 .comment__form {
@@ -15,7 +24,7 @@
   font-family: variables.$font;
   display: block;
   padding: 1rem;
-  width: 90%;
+  width: calc(100% - 32px);
   height: 68px;
   border: none;
   border-radius: 4px;

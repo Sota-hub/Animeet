@@ -18,7 +18,7 @@
   font-size: 14px;
   padding: 1em;
   cursor: pointer;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     font-size: 16px;
     padding: 1.5em;
   }
@@ -30,7 +30,7 @@
   cursor: pointer;
   background-color: variables.$orange;
   animation: jelly 0.5s;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     font-size: 16px;
     padding: 1.5em;
   }

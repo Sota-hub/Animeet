@@ -2,19 +2,37 @@
 @use "../base/mixin";
 @use "../base/global";
 
+.main__wrap {
+  @media (min-width: variables.$tablet) {
+    display: flex;
+    margin: 0 auto;
+    width: 85vw;
+  }
+}
+
 .main__wrap--image {
   width: 100vw;
-  height: 250px;
+  height: auto;
   overflow: hidden;
+  @media (min-width: variables.$tablet) {
+    margin-top: 2rem;
+    width: 60%;
+  }
 }
 
 .main__image {
   width: 100vw;
+  @media (min-width: variables.$tablet) {
+    width: 100%;
+  }
 }
 
 .main__wrap--info {
   margin-left: 1.5rem;
   width: 85vw;
+  @media (min-width: variables.$tablet) {
+    width: 40%;
+  }
 }
 
 .main__title {
@@ -35,6 +53,7 @@
   text-decoration: none;
   background-color: variables.$orange;
   color: variables.$white;
+  max-width: 325px;
 }
 
 .main__wrap--support {
@@ -68,6 +87,9 @@
 .main__wrap--creator {
   @include mixin.ScrollableHorizontally;
   display: flex;
+  @media (min-width: variables.$tablet) {
+    display: block;
+  }
 }
 
 .main__wrap--creator::-webkit-scrollbar {

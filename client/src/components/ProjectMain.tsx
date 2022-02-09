@@ -26,7 +26,7 @@ const ProjectMain: FC<ProjectMainProps> = ({
   creators,
 }) => {
   return (
-    <main>
+    <main className="main__wrap">
       <div className="main__wrap--image">
         <img src={projectImagePath} alt="project" className="main__image" />
       </div>

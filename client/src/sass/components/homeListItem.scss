@@ -6,7 +6,7 @@
   @include mixin.alignFourDirections($justify: space-between);
   padding: 1rem 1.5rem;
   border-bottom: variables.$border;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     display: block;
     width: 275px;
     height: 400px;
@@ -20,7 +20,7 @@
   width: 110px;
   height: 100px;
   overflow: hidden;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     width: 275px;
     height: 185px;
   }
@@ -28,14 +28,14 @@
 
 .home__image {
   height: 100px;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     height: 200px;
   }
 }
 
 .home__wrap--info {
   @include mixin.alignFourDirections();
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     margin: 1rem;
   }
 }
@@ -43,7 +43,7 @@
 .home__inner {
   & > * {
     margin: 6px 0;
-    @media (min-width: variables.$laptop) {
+    @media (min-width: variables.$tablet) {
       margin: 12px 0;
     }
   }
@@ -52,7 +52,7 @@
 .home__title {
   font-weight: 600;
   @include mixin.styleProtectionWidth;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     font-size: 18px;
     height: 18px;
   }
@@ -60,7 +60,7 @@
 
 .home__description {
   display: none;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     display: block;
     font-size: 12px;
     height: 100px;
@@ -71,7 +71,7 @@
 .home__creator {
   font-size: 12px;
   @include mixin.styleProtectionWidth;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     height: 15px;
     overflow: hidden;
   }
@@ -80,7 +80,7 @@
 .home__expiration {
   font-size: 12px;
   @include mixin.styleProtectionWidth;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     display: none;
   }
 }
@@ -91,7 +91,7 @@
   height: 35px;
   border: variables.$border;
   border-radius: 50%;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     margin: 0 12px 0 auto;
     transform: translateY(-45px);
   }
@@ -105,7 +105,7 @@
   border: variables.$border;
   border-color: variables.$orange;
   background-color: variables.$orange;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     margin: 0 12px 0 auto;
     transform: translateY(-45px);
   }

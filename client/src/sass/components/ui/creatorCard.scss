@@ -9,6 +9,9 @@
   max-width: 300px;
   border: variables.$border;
   flex-shrink: 0;
+  @media (min-width: variables.$tablet) {
+    margin-top: 6px;
+  }
 }
 
 .creator__image {

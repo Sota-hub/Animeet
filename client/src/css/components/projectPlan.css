@@ -142,10 +142,32 @@ body {
   margin-left: 1.5em;
   width: 85vw;
 }
+@media (min-width: 769px) {
+  .plan__wrap {
+    margin-left: 7.5%;
+    width: 50%;
+    transform: translateY(-325px);
+  }
+}
+@media (min-width: 1024px) {
+  .plan__wrap {
+    transform: translateY(-150px);
+  }
+}
+@media (min-width: 1441px) {
+  .plan__wrap {
+    transform: translateY(0px);
+  }
+}
 
 .plan__heading {
   margin-top: 2rem;
   font-size: 26px;
+}
+@media (min-width: 769px) {
+  .plan__heading {
+    font-size: 32px;
+  }
 }
 
 .plan__story {
@@ -156,7 +178,12 @@ body {
   display: block;
   margin-top: 1rem;
   width: 330px;
-  height: 210px;
+  height: auto;
+}
+@media (min-width: 769px) {
+  .plan__image {
+    width: 40vw;
+  }
 }
 
 .plan__wrap--playIcon {

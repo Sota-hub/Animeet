@@ -153,11 +153,11 @@ body {
   }
 }
 
-.header__element--laptop {
+.header__element--tablet {
   display: none;
 }
 @media (min-width: 769px) {
-  .header__element--laptop {
+  .header__element--tablet {
     display: block;
     width: 107px;
   }
