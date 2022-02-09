@@ -1,3 +1,5 @@
+import { monthInitial } from "./stringArrays";
+
 export const checkReminded = (
   remindedUserIds: number[],
   activeStyle: string,
@@ -15,4 +17,11 @@ export const activateStyle = (
 ) => {
   if (state === elementText) return activeStyle;
   return usualStyle;
+};
+
+export const formatTimeStamp = (timeStamp: Date) => {
+  const year = timeStamp.getFullYear();
+  const month = monthInitial[timeStamp.getMonth()];
+  const day = timeStamp.getDate();
+  return `${month} ${day} ${year}`;
 };

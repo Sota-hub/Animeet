@@ -89,7 +89,24 @@ export const ProjectDummy = {
     },
   ],
   //ANNOUNCE
-  announce_text:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
-  // time_stamp: Date.now(),
+  announces: [
+    {
+      id: 1,
+      announce_text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
+      time_stamp: new Date(),
+    },
+    {
+      id: 2,
+      announce_text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
+      time_stamp: new Date(),
+    },
+    {
+      id: 3,
+      announce_text:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis suscipit praesentium minus, dolore sint iure vero doloribus mollitia repudiandae dolores odit, quaerat adipisci. Hic incidunt accusantium nam dolores consequuntur!",
+      time_stamp: new Date(),
+    },
+  ],
 };

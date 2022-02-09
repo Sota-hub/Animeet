@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { initialMonth } from "../../stringArrays";
+import { formatTimeStamp } from "../../helperFunctions";
 import "../../css/components/ui/userComment.css";
 
 interface UserCommentProps {
@@ -14,13 +14,6 @@ const UserComment: FC<UserCommentProps> = ({
   commentText,
   timeStamp,
 }) => {
-  const formatTimeStamp = (timeStamp: Date) => {
-    const year = timeStamp.getFullYear();
-    const month = initialMonth[timeStamp.getMonth()];
-    const day = timeStamp.getDate();
-    return `${month} ${day} ${year}`;
-  };
-
   return (
     <>
       <div className="userComment__wrap">

@@ -39,7 +39,9 @@ const ProjectScreen: FC = () => {
       {navigation === "Comment" && (
         <ProjectComment comments={ProjectDummy.comments} />
       )}
-      {navigation === "Announce" && <ProjectAnnounce />}
+      {navigation === "Announce" && (
+        <ProjectAnnounce announces={ProjectDummy.announces} />
+      )}
     </>
   );
 };

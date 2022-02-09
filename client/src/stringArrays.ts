@@ -16,7 +16,7 @@ export const categories = [
 
 export const navigations = ["Plan", "Comment", "Announce"];
 
-export const initialMonth = [
+export const monthInitial = [
   "Jan",
   "Feb",
   "Mar",
