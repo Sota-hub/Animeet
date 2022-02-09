@@ -1,0 +1,28 @@
+@use "../../base/variables";
+@use "../../base/mixin";
+@use "../../base/global";
+
+.remind__wrap--active {
+  @include mixin.alignFourDirections();
+  width: 125px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: variables.$orange;
+}
+
+.remind__wrap {
+  @include mixin.alignFourDirections();
+  width: 125px;
+  padding: 10px;
+  border: variables.$border;
+  border-radius: 4px;
+}
+
+.remind__image {
+  width: 20px;
+  height: 20px;
+}
+
+.remind__text {
+  margin-left: 0.5rem;
+}

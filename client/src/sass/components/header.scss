@@ -3,19 +3,19 @@
 @use "../base/global";
 
 .header__container {
-  @include mixin.alignFourDirections($justify: space-between, $align: center);
+  @include mixin.alignFourDirections($justify: space-between);
   height: 75px;
   padding: 0 1.5rem;
   border-bottom: variables.$border;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     height: 100px;
     padding: 0 3rem;
   }
 }
 
-.header__element--laptop {
+.header__element--tablet {
   display: none;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     display: block;
     width: 107px;
   }
@@ -23,13 +23,13 @@
 
 .header__logo {
   width: 75px;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     width: 100px;
   }
 }
 
 .header__wrap--right {
-  @include mixin.alignFourDirections($justify: center, $align: center);
+  @include mixin.alignFourDirections();
 }
 
 .header__link--explore {

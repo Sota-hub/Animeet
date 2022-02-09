@@ -138,48 +138,31 @@ body {
   background-color: #69cdbb;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 75px;
-  padding: 0 1.5rem;
-  border-bottom: 1px solid #ffffff;
-}
-@media (min-width: 769px) {
-  .header__container {
-    height: 100px;
-    padding: 0 3rem;
-  }
-}
-
-.header__element--tablet {
-  display: none;
-}
-@media (min-width: 769px) {
-  .header__element--tablet {
-    display: block;
-    width: 107px;
-  }
-}
-
-.header__logo {
-  width: 75px;
-}
-@media (min-width: 769px) {
-  .header__logo {
-    width: 100px;
-  }
-}
-
-.header__wrap--right {
+.remind__wrap--active {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 125px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f2a03d;
 }
 
-.header__link--explore {
-  margin-right: 1rem;
-  text-decoration: none;
-  color: #ffffff;
+.remind__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+.remind__image {
+  width: 20px;
+  height: 20px;
+}
+
+.remind__text {
+  margin-left: 0.5rem;
 }

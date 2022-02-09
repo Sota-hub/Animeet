@@ -1,40 +1,36 @@
 @use "../base/variables";
+@use "../base/mixin";
 @use "../base/global";
 @use "../base/animations";
 
-.category__list {
+.home__category--list {
+  @include mixin.ScrollableHorizontally;
   display: flex;
-  margin: 0 auto 0 0;
-  overflow-x: auto;
-  overflow-y: hidden;
   border-bottom: variables.$border;
-  // Remove scrollbar(IE, Edge, Firefox)
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 // Remove scrollbar(Chrome, Safari)
-.category__list::-webkit-scrollbar {
+.home__category--list::-webkit-scrollbar {
   display: none;
 }
 
-.category__item {
+.home__category--item {
   font-size: 14px;
   padding: 1em;
   cursor: pointer;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     font-size: 16px;
     padding: 1.5em;
   }
 }
 
-.category__item--active {
+.home__category--activeItem {
   font-size: 14px;
   padding: 1em;
   cursor: pointer;
   background-color: variables.$orange;
   animation: jelly 0.5s;
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     font-size: 16px;
     padding: 1.5em;
   }

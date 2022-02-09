@@ -6,7 +6,7 @@ import "../css/components/header.css";
 const Header: FC = () => {
   return (
     <div className="header__container">
-      <div className="header__element--laptop" />
+      <div className="header__element--tablet" />
       <Link to="/">
         <img src="/logo.png" alt="logo" className="header__logo" />
       </Link>

@@ -2,7 +2,7 @@
 @use "../base/global";
 
 .home__container--outside {
-  @media (min-width: variables.$laptop) {
+  @media (min-width: variables.$tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80vw;

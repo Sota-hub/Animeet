@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 
-import CategoryList from "../components/CategoryList";
+import HomeCategory from "../components/HomeCategory";
 import HomeList from "../components/HomeList";
 
 const HomeScreen: FC = () => {
@@ -8,7 +8,7 @@ const HomeScreen: FC = () => {
 
   return (
     <>
-      <CategoryList category={category} setCategory={setCategory} />
+      <HomeCategory category={category} setCategory={setCategory} />
       <HomeList category={category} />
     </>
   );

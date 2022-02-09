@@ -1,0 +1,30 @@
+@use "../../base/variables";
+@use "../../base/mixin";
+@use "../../base/global";
+
+.creator__wrap {
+  @include mixin.alignFourDirections($justify: flex-start);
+  margin-right: 1rem;
+  padding: 1rem;
+  max-width: 300px;
+  border: variables.$border;
+  flex-shrink: 0;
+  @media (min-width: variables.$tablet) {
+    margin-top: 6px;
+  }
+}
+
+.creator__image {
+  width: 36px;
+  height: 36px;
+  margin-right: 1rem;
+}
+
+.creator__name {
+  font-size: 18px;
+}
+
+.creator_position {
+  margin-top: 0.5rem;
+  font-size: 14px;
+}

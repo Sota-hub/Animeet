@@ -1,0 +1,16 @@
+@use "../../base/variables";
+@use "../../base/global";
+
+.announce__timestamp {
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.announce__wrap--text {
+  margin-top: 0.5rem;
+}
+
+.announce__text {
+  border: variables.$border;
+  padding: 1rem;
+}
