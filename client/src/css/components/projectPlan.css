@@ -196,8 +196,20 @@ body {
   border: 1px solid #ffffff;
   border-radius: 12px;
 }
+@media (min-width: 769px) {
+  .plan__wrap--playIcon {
+    width: 200px;
+    height: 125px;
+  }
+}
 
 .plan__icon--audio {
   width: 26px;
   height: 26px;
+}
+@media (min-width: 769px) {
+  .plan__icon--audio {
+    width: 62px;
+    height: 62px;
+  }
 }

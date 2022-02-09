@@ -45,6 +45,10 @@
   height: 50px;
   border: variables.$border;
   border-radius: 12px;
+  @media (min-width: variables.$tablet) {
+    width: 200px;
+    height: 125px;
+  }
 }
 
 // .plan__wrap--pauseIcon {
@@ -59,4 +63,8 @@
 .plan__icon--audio {
   width: 26px;
   height: 26px;
+  @media (min-width: variables.$tablet) {
+    width: 62px;
+    height: 62px;
+  }
 }
