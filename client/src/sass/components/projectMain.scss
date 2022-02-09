@@ -4,6 +4,7 @@
 
 .main__wrap {
   @media (min-width: variables.$tablet) {
+    position: relative;
     display: flex;
     margin: 0 auto;
     width: 85vw;
@@ -16,7 +17,7 @@
   overflow: hidden;
   @media (min-width: variables.$tablet) {
     margin-top: 2rem;
-    width: 60%;
+    width: 55%;
   }
 }
 
@@ -31,7 +32,10 @@
   margin-left: 1.5rem;
   width: 85vw;
   @media (min-width: variables.$tablet) {
-    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 59%;
+    width: 41%;
   }
 }
 

@@ -55,13 +55,26 @@ const ProjectPlan: FC<ProjectPlanProps> = ({
           className="plan__image"
         ></img>
       ))}
-      <h2 className="plan__heading">Voice</h2>
-      <div className="plan__wrap--playIcon" onClick={() => switchAudio(voice)}>
-        <img src="/play.svg" alt="voice" className="plan__icon--audio" />
-      </div>
-      <h2 className="plan__heading">Sound Effect</h2>
-      <div className="plan__wrap--playIcon" onClick={() => switchAudio(SE)}>
-        <img src="/play.svg" alt="sound effect" className="plan__icon--audio" />
+      <div className="plan__wrap--audios">
+        <div>
+          <h2 className="plan__heading">Voice</h2>
+          <div
+            className="plan__wrap--playIcon"
+            onClick={() => switchAudio(voice)}
+          >
+            <img src="/play.svg" alt="voice" className="plan__icon--audio" />
+          </div>
+        </div>
+        <div>
+          <h2 className="plan__heading">SE</h2>
+          <div className="plan__wrap--playIcon" onClick={() => switchAudio(SE)}>
+            <img
+              src="/play.svg"
+              alt="sound effect"
+              className="plan__icon--audio"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

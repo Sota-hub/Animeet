@@ -6,13 +6,8 @@
   margin: 0 auto;
   width: 85vw;
   @media (min-width: variables.$tablet) {
-    @include mixin.mediaQueryStyleForProject;
-  }
-  @media (min-width: variables.$laptop) {
-    transform: translateY(-150px);
-  }
-  @media (min-width: variables.$desktop) {
-    transform: translateY(0px);
+    margin-left: 7.5%;
+    width: 50%;
   }
 }
 

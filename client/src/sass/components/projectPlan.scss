@@ -6,13 +6,8 @@
   margin-left: 1.5em;
   width: 85vw;
   @media (min-width: variables.$tablet) {
-    @include mixin.mediaQueryStyleForProject;
-  }
-  @media (min-width: variables.$laptop) {
-    transform: translateY(-150px);
-  }
-  @media (min-width: variables.$desktop) {
-    transform: translateY(0px);
+    margin-left: 7.5%;
+    width: 50%;
   }
 }
 
@@ -34,17 +29,26 @@
   width: 330px;
   height: auto;
   @media (min-width: variables.$tablet) {
-    width: 40vw;
+    width: 30vw;
+  }
+}
+
+.plan__wrap--audios {
+  @media (min-width: variables.$tablet) {
+    display: flex;
   }
 }
 
 .plan__wrap--playIcon {
   @include mixin.alignFourDirections();
   margin-top: 1rem;
-  width: 80px;
-  height: 50px;
+  width: 120px;
+  height: 75px;
   border: variables.$border;
   border-radius: 12px;
+  @media (min-width: variables.$tablet) {
+    margin-right: 3rem;
+  }
 }
 
 // .plan__wrap--pauseIcon {
@@ -57,6 +61,6 @@
 // }
 
 .plan__icon--audio {
-  width: 26px;
-  height: 26px;
+  width: 39px;
+  height: 39px;
 }
