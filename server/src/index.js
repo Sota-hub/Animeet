@@ -4,6 +4,7 @@ const { graphqlHTTP } = require("express-graphql");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const passport = require("passport");
+require("dotenv").config();
 
 const app = express();
 const TEST_KEY = process.env.TEST_SECRET_API_KEY;
