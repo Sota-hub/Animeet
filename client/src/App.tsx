@@ -7,6 +7,7 @@ import HomeScreen from "./pages/HomeScreen";
 import ProjectScreen from "./pages/ProjectScreen";
 import SupportScreen from "./pages/SupportScreen";
 import PaymentScreen from "./pages/PaymentScreen";
+import ExploreScreen from "./pages/ExploreScreen";
 
 const App: FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: FC = () => {
         <Route path="/project" element={<ProjectScreen />} />
         <Route path="/support" element={<SupportScreen />} />
         <Route path="/payment" element={<PaymentScreen />} />
+        <Route path="/explore" element={<ExploreScreen />} />
       </Routes>
       <Footer />
     </>

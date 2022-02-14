@@ -1,0 +1,213 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #69cdbb;
+}
+
+.explore__wrap--input {
+  padding: 2rem 0;
+  border-bottom: 1px solid #ffffff;
+}
+@media (min-width: 1024px) {
+  .explore__wrap--input {
+    display: flex;
+    padding: 2rem 3rem 2rem;
+  }
+}
+
+.explore__input,
+.explore__select--category,
+.explore__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+}
+@media (min-width: 769px) {
+  .explore__input,
+.explore__select--category,
+.explore__button {
+    width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .explore__input,
+.explore__select--category,
+.explore__button {
+    width: calc(35% - 20px);
+    height: 32px;
+  }
+}
+
+.explore__select--category {
+  margin-top: 0.5rem;
+  width: 320px;
+}
+@media (min-width: 769px) {
+  .explore__select--category {
+    width: 520px;
+  }
+}
+@media (min-width: 1024px) {
+  .explore__select--category {
+    width: 35%;
+    height: 52px;
+    margin-top: 0;
+  }
+}
+
+.explore__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 20px;
+  background-color: #f2a03d;
+}
+@media (min-width: 1024px) {
+  .explore__button {
+    margin-top: 0;
+    width: 15%;
+  }
+}
+
+.explore__text--button {
+  margin-left: 0.5rem;
+}

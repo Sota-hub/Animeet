@@ -1,0 +1,59 @@
+@use "../base/variables";
+@use "../base/mixin";
+@use "../base/global";
+
+.explore__wrap--input {
+  padding: 2rem 0;
+  border-bottom: variables.$border;
+  @media (min-width: variables.$laptop) {
+    display: flex;
+    padding: 2rem 3rem 2rem;
+  }
+}
+
+.explore__input,
+.explore__select--category,
+.explore__button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: calc(320px - 20px);
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  @media (min-width: variables.$tablet) {
+    width: calc(520px - 20px);
+  }
+  @media (min-width: variables.$laptop) {
+    width: calc(35% - 20px);
+    height: calc(52px - 20px);
+  }
+}
+
+.explore__select--category {
+  margin-top: 0.5rem;
+  width: 320px;
+  @media (min-width: variables.$tablet) {
+    width: 520px;
+  }
+  @media (min-width: variables.$laptop) {
+    width: 35%;
+    height: 52px;
+    margin-top: 0;
+  }
+}
+
+.explore__button {
+  @include mixin.alignFourDirections();
+  margin-top: 1rem;
+  font-size: 20px;
+  background-color: variables.$orange;
+  @media (min-width: variables.$laptop) {
+    margin-top: 0;
+    width: 15%;
+  }
+}
+
+.explore__text--button {
+  margin-left: 0.5rem;
+}
