@@ -5,6 +5,8 @@ const mongoose = require("mongoose");
 const passport = require("passport");
 const bodyParser = require("body-parser");
 
+const schema = require("./graphql/schema");
+
 const app = express();
 
 mongoose.connect(
@@ -29,7 +31,7 @@ app.use(passport.session());
 app.use(
   "/graphql",
   graphqlHTTP({
-    // schema,
+    schema,
     graphiql: true,
   })
 );
