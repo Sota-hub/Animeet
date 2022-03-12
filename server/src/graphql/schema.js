@@ -1,9 +1,9 @@
 const { GraphQLSchema } = require("graphql");
 
-const RootQueryType = require("./types/root_query_type");
-// const mutation = require("./mutations/mutations");
+const queries = require("./queries");
+// const mutations = require("./mutations");
 
 module.exports = new GraphQLSchema({
-  query: RootQueryType,
+  query: queries,
   // mutation: mutations,
 });

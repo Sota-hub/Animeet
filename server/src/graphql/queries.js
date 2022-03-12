@@ -7,13 +7,13 @@ const {
   GraphQLNonNull,
 } = require("graphql");
 
-const ProjectType = require("./project_type");
-const UserType = require("./user_type");
+const ProjectType = require("./types/project_type");
+const UserType = require("./types/user_type");
 
 const Project = mongoose.model("project");
 
-const RootQueryType = new GraphQLObjectType({
-  name: "RootQueryType",
+const queries = new GraphQLObjectType({
+  name: "Queries",
   fields: () => ({
     projects: {
       type: new GraphQLList(ProjectType),
@@ -39,4 +39,4 @@ const RootQueryType = new GraphQLObjectType({
   }),
 });
 
-module.exports = RootQueryType;
+module.exports = queries;
