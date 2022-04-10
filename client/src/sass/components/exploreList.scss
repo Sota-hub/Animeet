@@ -1,0 +1,20 @@
+@use "../base/variables";
+@use "../base/global";
+
+.explore__wrap--list {
+  margin: 2rem auto;
+  width: 85vw;
+  max-width: 320px;
+  @media (min-width: variables.$tablet) {
+    max-width: 500px;
+  }
+  @media (min-width: variables.$laptop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: none;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
