@@ -1,0 +1,36 @@
+@use "../base/variables";
+@use "../base/global";
+
+.explore__wrap--item {
+  margin-top: 2rem;
+  border: variables.$border;
+}
+
+.explore__image {
+  width: 100%;
+}
+
+.explore__wrap--info {
+  margin: 0 auto;
+  width: 85%;
+}
+
+.explore__title {
+  display: block;
+  margin: 1rem 0;
+  font-size: 24px;
+  color: variables.$white;
+  text-decoration: none;
+}
+
+.explore__current--support {
+  margin: 1rem 0;
+}
+
+.explore__creators {
+  font-size: 14px;
+}
+
+.explore__description {
+  margin: 1rem 0;
+}

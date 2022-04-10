@@ -137,3 +137,46 @@ export const SupportDummy = {
     },
   ],
 };
+
+export const ExploreDummy = [
+  {
+    id: "1",
+    imagePath: "/paripi.jpg",
+    projectName: "Dragon ball",
+    remindedUsersIdList: [222222],
+    support_current: 200,
+    creatorsName: ["colt", "stephen", "stephan"],
+    projectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta, totam, magni sit deserunt quo consectetur repellendus ipsam quisquam quia sapiente. Mollitia nam saepe aperiam facere, impedit dolor aspernatur nobis!",
+  },
+  {
+    id: "2",
+    imagePath: "/paripi.jpg",
+    projectName: "One piece",
+    remindedUsersIdList: [111111, 222222],
+    support_current: 100,
+    creatorsName: ["stephen", "colt", "stephan"],
+    projectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta, totam, magni sit deserunt quo consectetur repellendus ipsam quisquam quia sapiente. Mollitia nam saepe aperiam facere, impedit dolor aspernatur nobis!",
+  },
+  {
+    id: "3",
+    imagePath: "/paripi.jpg",
+    projectName: "One piece",
+    remindedUsersIdList: [111111, 222222],
+    support_current: 100,
+    creatorsName: ["stephen", "colt", "stephan"],
+    projectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta, totam, magni sit deserunt quo consectetur repellendus ipsam quisquam quia sapiente. Mollitia nam saepe aperiam facere, impedit dolor aspernatur nobis!",
+  },
+  {
+    id: "4",
+    imagePath: "/paripi.jpg",
+    projectName: "One piece",
+    remindedUsersIdList: [111111, 222222],
+    support_current: 100,
+    creatorsName: ["stephen", "colt", "stephan"],
+    projectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione dicta, totam, magni sit deserunt quo consectetur repellendus ipsam quisquam quia sapiente. Mollitia nam saepe aperiam facere, impedit dolor aspernatur nobis!",
+  },
+];
