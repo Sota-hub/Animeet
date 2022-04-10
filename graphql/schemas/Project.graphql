@@ -1,0 +1,22 @@
+type Project implements Common {
+  id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+  projectImagePath: String!
+  projectName: String!
+  projectDescription: String!
+  supportCurrent: Int!
+  supportTarget: Int!
+  remindedUserIds: [ID!]
+  expireDate: String!
+  category: String!
+  story: String!
+  characterDesignPath: [String!]
+  originalPicturePath: [String!]
+  voicePath: String!
+  soundEffectPath: String!
+  creatorIds: [ID!]
+  creators: [User!]
+  comments: [Comment]
+  announces: [Announce]
+}

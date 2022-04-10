@@ -1,0 +1,9 @@
+type Announce implements Common {
+  id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+  projectId: ID!
+  announceText: String!
+  # createdAt can be timeStamp
+  # timeStamp: String!
+}

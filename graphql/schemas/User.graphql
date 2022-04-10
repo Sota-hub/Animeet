@@ -1,0 +1,10 @@
+type User implements Common {
+  id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+  userName: String!,
+  email: String!,
+  position: String!
+  # password shouldn't be exposed, so it's not needed
+  # password: String
+}
