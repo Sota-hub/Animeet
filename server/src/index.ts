@@ -31,9 +31,6 @@ const context = () => {
     typeDefs: await typeDefs, 
     resolvers, 
     context });
-
-  // console.log(server);
-    
     
     server.listen({port: process.env.PORT}).then(() => {
       console.log(`Server ready at ${process.env.PORT}`);
