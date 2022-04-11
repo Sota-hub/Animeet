@@ -1,4 +1,4 @@
-type Common {
+interface Common {
   id: ID!
   createdAt: Date!
   updatedAt: Date!
