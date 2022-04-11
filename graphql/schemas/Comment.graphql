@@ -1,0 +1,13 @@
+type Comment implements Common {
+  id: ID!
+  createdAt: Date!
+  updatedAt: Date!
+  projectId: ID!,
+  commentText: String!,
+  # createdAt can be timeStamp
+  # timeStamp: String!
+  commentedUser: User!
+  # commentedUser includes userId and userName
+  # userId: ID!
+  # userName: String!
+}

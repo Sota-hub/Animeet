@@ -1,0 +1,15 @@
+type Query {
+  project(id: ID!): Project!
+  projects: [Project!]!
+  user(id: ID!): User!
+
+  # This is dummy data
+  books: [Book!]!
+}
+
+# I wrote Book type here since this is dummy data,
+# but I should separate the file if I write type for real data
+type Book {
+  title: String!
+  author: String!
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"books.js","sourceRoot":"","sources":["../../../src/resolvers/queryResolvers/books.ts"],"names":[],"mappings":";;;AAAA,MAAM,OAAO,GAAG;IACd;QACE,KAAK,EAAE,eAAe;QACtB,MAAM,EAAE,aAAa;KACtB;IACD;QACE,KAAK,EAAE,eAAe;QACtB,MAAM,EAAE,aAAa;KACtB;CACF,CAAC;AAEK,MAAM,KAAK,GAAG,GAAG,EAAE,CAAC,OAAO,CAAA;AAArB,QAAA,KAAK,SAAgB"}
