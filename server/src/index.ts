@@ -1,24 +1,10 @@
 const { ApolloServer } = require('apollo-server');
 require('dotenv').config();
 
-import { typeDefs } from "../../graphql/dist/index"
+import typeDefs from "../../graphql/dist/index"
+import resolvers from "./resolvers/index"
 
 // DUMMY FOR NOW ===============================
-const books = [
-  {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
-  },
-  {
-    title: 'City of Glass',
-    author: 'Paul Auster',
-  },
-];
-const resolvers = {
-  Query: {
-    books: () => books,
-  },
-};
 const context = () => {
   return {
     objectKey : "objectValue"

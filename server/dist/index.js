@@ -8,25 +8,14 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const { ApolloServer } = require('apollo-server');
 require('dotenv').config();
-const index_1 = require("../../graphql/dist/index");
-const books = [
-    {
-        title: 'The Awakening',
-        author: 'Kate Chopin',
-    },
-    {
-        title: 'City of Glass',
-        author: 'Paul Auster',
-    },
-];
-const resolvers = {
-    Query: {
-        books: () => books,
-    },
-};
+const index_1 = __importDefault(require("../../graphql/dist/index"));
+const index_2 = __importDefault(require("./resolvers/index"));
 const context = () => {
     return {
         objectKey: "objectValue"
@@ -34,8 +23,8 @@ const context = () => {
 };
 (() => __awaiter(void 0, void 0, void 0, function* () {
     const server = new ApolloServer({
-        typeDefs: yield index_1.typeDefs,
-        resolvers,
+        typeDefs: yield index_1.default,
+        resolvers: index_2.default,
         context
     });
     server.listen({ port: process.env.PORT }).then(() => {
