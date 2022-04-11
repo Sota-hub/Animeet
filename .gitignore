@@ -1,5 +1,4 @@
-/*/node_modules
-/*/build
-.DS_Store
+node_modules
+dist
 .env
-/ref
+.DS_Store
